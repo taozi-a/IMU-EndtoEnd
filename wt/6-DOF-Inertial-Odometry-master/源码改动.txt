@@ -1,0 +1,22 @@
+
+
+# 在File "D:\anacon\envs\new_imu\lib\site-packages\tensorflow_core\python\util\serialization.py", line 68, in get_json_type中
+from tensorflow.python.framework.tensor_shape import Dimension
+if type(obj) == Dimension:
+  return int(obj.value or 0)
+
+
+
+
+在tfquaternion中，tfquaternion 中sum_什么什么改为用tensorflow.compat.v1...
+
+
+
+
+    def get_config(self):
+        config = super().get_config().copy()
+        config.update({
+            'nb_outputs': self.nb_outputs,
+            'is_placeholder': self.is_placeholder
+        })
+        return config
