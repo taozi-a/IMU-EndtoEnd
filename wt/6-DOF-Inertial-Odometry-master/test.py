@@ -13,7 +13,7 @@ from util import *
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--dataset', choices=['oxiod', 'euroc'], help='Training dataset name (\'oxiod\' or \'euroc\')', default='oxiod')
-    parser.add_argument('--model', help='Model path', default="epo20_bs32_adam0.0001_lossnoadj_1657277198.hdf5")
+    parser.add_argument('--model', help='Model path', default="6dofio_oxiod.hdf5")
     # '6dofio_oxiod.hdf5'
     parser.add_argument('--input', help='Input sequence path (e.g. \"Oxford Inertial Odometry Dataset/handheld/data4/syn/imu1.csv\" for OxIOD, \"MH_02_easy/mav0/imu0/data.csv\" for EuRoC)',
                         default="Oxford Inertial Odometry Dataset/handheld/data4/syn/imu1.csv")
